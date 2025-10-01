@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+
+    <script type="text/javascript">
+        // Get the current domain
+        var currentDomain = window.location.hostname.toLowerCase();
+
+        // Only redirect if it's one of the specific domains
+        if (currentDomain === 'coachjfinancial.com' || currentDomain === 'www.coachjfinancial.com') {
+            window.location.replace('https://fundareventures.com/#coachj');
+        } else if (currentDomain === 'prosperasolutions.org' || currentDomain === 'www.prosperasolutions.org') {
+            window.location.replace('https://fundareventures.com/#prospera');
+        }
+        // If it's any other domain (like fundareventures.com), do nothing - let the page load normally
+    </script>
+
+    <!-- Meta refresh as fallback for coachjfinancial.com -->
+    <meta http-equiv="refresh" content="0; url=https://fundareventures.com/#coachj">
+</head>
+<body>
+    <!-- Fallback content in case JavaScript is disabled -->
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>Redirecting...</h1>
+        <p>If you are not redirected automatically, please follow these links:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li><a href="https://fundareventures.com/#coachj">Coach J Financial</a></li>
+            <li><a href="https://fundareventures.com/#prospera">Prospera Solutions</a></li>
+        </ul>
+    </div>
+</body>
+</html>
